@@ -8,3 +8,5 @@ flask-cors==4.0.0
 websocket-client==1.6.4
 colorama==0.4.6
 gunicorn==23.0.0
+tzlocal>=5.0
+dateparser>=1.0
