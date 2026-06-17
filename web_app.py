@@ -11,7 +11,12 @@ from bot.logging_config import logger
 load_dotenv()
 
 app = Flask(__name__, template_folder='web', static_folder='web')
-CORS(app)
+
+# ============================================
+# 🔗 CORS Configuration - Allow Frontend URL
+# ============================================
+frontend_url = 'https://elerius-star.github.io'
+CORS(app, origins=[frontend_url])
 
 # Initialize bot components
 try:
